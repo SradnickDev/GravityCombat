@@ -1,0 +1,5 @@
+- on first run its create file config.json
+- please open file out the information, dont forget the / at the end of the folder path
+- download credential.json from https://developers.google.com/drive/api/v3/quickstart/go?source=post_page---------------------------
+	- click on "Enable the Drive API" this will take a moment	
+	- download the credential.json and add it next to the exe
