@@ -1,0 +1,162 @@
+﻿version 0.010
+- new Scoreboard
+- fixed some bugs in GameModes
+
+version 0.09c
+- added Explosion on Death
+- added initial jump direction
+- added Upgrade Effect
+- removed movement invert
+- fixed spawn bug
+
+version 0.09b
+- added kill feed
+- clamped screen ratio to 16:9
+
+version 0.09a
+- fixed some bugs
+
+version 0.09
+- fixed Kill the King
+
+version 0.08b
+- Kill the King : king now with weapon auto upgrade
+
+version 0.08a
+- matchmaking button are available
+- WaitingRoom Host start button can now clicked only once
+
+
+version 0.08
+- all GameModes are available
+- improved code base
+- new Timer
+- placeholder End Screen
+-all Host settings are working
+
+version 0.07
+- all GameModes available (Kill the King as a placeholder)
+- namePlates
+- new vfx
+- new Timer for Waiting Room and matches
+- scoreboard sorts a little now
+- improved code stuff
+
+version 0.06
+- new random weapon spawn
+- weapon upgrades
+- fixed projectiles (no damage based on Client count)
+- fixed player stats
+- some color for our weapons
+
+version 0.05a
+- laser pickup hotfix
+
+version 0.05
+- version control
+- player duplication fix
+- 2 new weapons, Laser and Lasercutter
+
+version 0.04
+- new character model
+
+version 0.03a
+- improved matchmaking
+- fixed waiting room stats not displaying
+
+version 0.03
+- improved login, lobby
+- fixed spawning
+- lot of menu changes (code)
+
+version 0.02a 
+- new scoreboard
+- player have points
+- player gets assists
+- projectile fix
+- new health model fix
+
+version 0.02
+- new health model
+- weapon states updates
+
+version 0.01
+- new build pipline
+
+version 0.1.1
+- fixed scoreboard
+
+version 0.0.9
+- add player propbs
+- added scoreboard
+
+version 0.0.5
+- added assault rifle effects
+
+version 0.0.3
+- added UI ammo/reload bar
+- less but better maps
+- camera shake updates
+
+version 0.0.2
+- added build pipeline
+- adjust camera
+- updated weapon settings
+
+version 0.0.1
+- new no-Gravity movement
+- simple camera movement
+- new test map
+- default weapon = pistol
+- 3 diff weapon types, pistol, shotgun,machinegun
+- weapon pickups
+- respawn
+
+
+version 0.0.0
+- login,lobby, room - menu (prototype)
+- simple movement
+-simple shooting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
