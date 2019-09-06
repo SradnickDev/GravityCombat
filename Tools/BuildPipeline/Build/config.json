@@ -1,8 +1,8 @@
-{"ChangelogFile":"D:/Repos/Mercurial/Rider_Projects/BuildPipeline/bin/Debug/ChangeLog/Changelog.txt",
-"SourceFolder":"D:/Repos/Mercurial/Rider_Projects/BuildPipeline/bin/Debug/Source/",
-"StorageFolder":"D:/Repos/Mercurial/Rider_Projects/BuildPipeline/bin/Debug/Storage/",
-"ButlerTarget":"sradnickdev/testproj:windows",
-"DriveFolderID":"1F3vL9al68kKS8eRhtApjy4Zbt2qBXiyX",
-"SlackWebHookUrl":"https://hooks.slack.com/services/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",
-"SlackChannelName":"#buildpipetest",
-"SlackUsername":"buildpipeline "}
+{"ChangelogFile":"D:/PATHTOFOLDER/Changelog.txt",
+"SourceFolder":"D:/PATHTOFOLDER/Source/",
+"StorageFolder":"D:PATHTOFOLDER/Storage/",
+"ButlerTarget":"accName/projectName:platform",
+"DriveFolderID":"drive folder id",
+"SlackWebHookUrl":"slack webhook url",
+"SlackChannelName":"channel name",
+"SlackUsername":"bot name"}
