@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ec8bfac610914faeb9934dc1d7afd, type: 3}
+  m_Name: Weapon_Assault_Rifle_Upgraded
+  m_EditorClassIdentifier: 
+  WeaponName: Assault Rifle Upgraded
+  WeaponType: 1
+  TriggerType: 1
+  Model: {fileID: 1149662368910971325, guid: 0ed82888d4850ba44a85324ca27f3cf3, type: 3}
+  PositionOffset: {x: 0.1, y: -0.1, z: 1}
+  Projectile: {fileID: 0}
+  MuzzleFlash: {fileID: 19813698, guid: 2dea950514f782e41b1f879b2c0dc5fe, type: 3}
+  ChargeEffect: {fileID: 0}
+  MuzzleFlashOffset: {x: 0, y: 0.1, z: 1.5}
+  HitEffect: {fileID: 19855376, guid: 6a054caf3965d2448b68d46e702a2a5e, type: 3}
+  TrailEffect: {fileID: 7996662572793840162, guid: c68dad9cdfe6edc4f85a7d8142bec232,
+    type: 3}
+  ShootAudio: {fileID: 8300000, guid: 2eaa4e1ae87865f4daf42729b939aace, type: 3}
+  ChargeAudio: {fileID: 0}
+  HitMask:
+    serializedVersion: 2
+    m_Bits: 1536
+  ShakeProfile: 1
+  Damage: 4
+  TicRate: 0
+  TicDamage: 0
+  ChargeTime: 0
+  FadeOutTime: 0
+  RayThickness: 0
+  MaxLength: 0
+  ReflectCount: 0
+  FireRate: 0.03
+  AmmoClip: 30
+  ReloadTime: 1
+  Recoil: {x: 0, y: 1}
+  RecoilResetDuration: 0.1
+  PushBack: 1
+  Spread: 0
+  BulletCount: 0
+  Upgrade: {fileID: 0}

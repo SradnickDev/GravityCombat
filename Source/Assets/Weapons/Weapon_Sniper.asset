@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ec8bfac610914faeb9934dc1d7afd, type: 3}
+  m_Name: Weapon_Sniper
+  m_EditorClassIdentifier: 
+  WeaponName: Sniper
+  WeaponType: 4
+  TriggerType: 0
+  Model: {fileID: 611585802907081778, guid: 16c0d98a5264a7f4fb079b1515f5616d, type: 3}
+  PositionOffset: {x: 0, y: 0.1, z: 0.44}
+  Projectile: {fileID: 0}
+  MuzzleFlash: {fileID: 19862390, guid: efec5ec16a6ec6041ac219ebf87a45ea, type: 3}
+  ChargeEffect: {fileID: 19829470, guid: 24b4b89b4408ad94f843be932ba2818a, type: 3}
+  MuzzleFlashOffset: {x: 0.1, y: 0, z: 4}
+  HitEffect: {fileID: 19891770, guid: ca5299f31ff7a784b8859fa034a8d674, type: 3}
+  TrailEffect: {fileID: 5877967431837411591, guid: 38c6e1a3488ffa141b659c72d4cef043,
+    type: 3}
+  ShootAudio: {fileID: 8300000, guid: 934c89bd193ae92469876addf341534b, type: 3}
+  ChargeAudio: {fileID: 8300000, guid: 2db1e521c6df0df4faf7b928b48907c9, type: 3}
+  HitMask:
+    serializedVersion: 2
+    m_Bits: 512
+  ShakeProfile: 2
+  Damage: 70
+  TicRate: 0.25
+  TicDamage: 4
+  ChargeTime: 1
+  FadeOutTime: 1.3
+  RayThickness: 0.8
+  MaxLength: 50
+  ReflectCount: 0
+  FireRate: 1
+  AmmoClip: 1
+  ReloadTime: 4
+  Recoil: {x: 0, y: 0}
+  RecoilResetDuration: 0.1
+  PushBack: 10
+  Spread: 10
+  BulletCount: 0
+  Upgrade: {fileID: 11400000, guid: 1b67e42f6cdbf2c47836d00f5e5e3764, type: 2}

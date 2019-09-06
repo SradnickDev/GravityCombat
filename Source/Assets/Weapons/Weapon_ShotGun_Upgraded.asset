@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ec8bfac610914faeb9934dc1d7afd, type: 3}
+  m_Name: Weapon_ShotGun_Upgraded
+  m_EditorClassIdentifier: 
+  WeaponName: Shotgun Upgraded
+  WeaponType: 2
+  TriggerType: 0
+  Model: {fileID: 611585802907081778, guid: 8a43a2c0611a47940af73b63131e5e03, type: 3}
+  PositionOffset: {x: 0.2, y: 0, z: 1}
+  Projectile: {fileID: 5524566331251940615, guid: 3a8b3608043909846ad7644f8cf9ad42,
+    type: 3}
+  MuzzleFlash: {fileID: 19814074, guid: afc4bfd6ea9872e44ab0cb2783eac102, type: 3}
+  ChargeEffect: {fileID: 0}
+  MuzzleFlashOffset: {x: 0, y: 0.3, z: 1}
+  HitEffect: {fileID: 0}
+  TrailEffect: {fileID: 0}
+  ShootAudio: {fileID: 8300000, guid: e6c12aa3143313546a63b4b1cacb97a5, type: 3}
+  ChargeAudio: {fileID: 0}
+  HitMask:
+    serializedVersion: 2
+    m_Bits: 512
+  ShakeProfile: 5
+  Damage: 9
+  TicRate: 0
+  TicDamage: 0
+  ChargeTime: 0
+  FadeOutTime: 0
+  RayThickness: 0
+  MaxLength: 0
+  ReflectCount: 0
+  FireRate: 0.25
+  AmmoClip: 4
+  ReloadTime: 1.3
+  Recoil: {x: 0, y: 1.5}
+  RecoilResetDuration: 0.1
+  PushBack: 5
+  Spread: 20
+  BulletCount: 6
+  Upgrade: {fileID: 0}

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ec8bfac610914faeb9934dc1d7afd, type: 3}
+  m_Name: Weapon_Pistol_Upgraded
+  m_EditorClassIdentifier: 
+  WeaponName: Pistol Upgraded
+  WeaponType: 0
+  TriggerType: 0
+  Model: {fileID: 3899106588312731405, guid: 7710ebf0d42a3f741a2a8e0bc3c40ab6, type: 3}
+  PositionOffset: {x: 0.1, y: 0, z: 1.3}
+  Projectile: {fileID: 5524566331251940615, guid: 904d89266927a9f49b09013a2c18ae82,
+    type: 3}
+  MuzzleFlash: {fileID: 19813698, guid: 2dea950514f782e41b1f879b2c0dc5fe, type: 3}
+  ChargeEffect: {fileID: 0}
+  MuzzleFlashOffset: {x: 0, y: 0.3, z: 0.7}
+  HitEffect: {fileID: 0}
+  TrailEffect: {fileID: 0}
+  ShootAudio: {fileID: 8300000, guid: 5fc72ebcf9a45a14eb981a59a3ab3016, type: 3}
+  ChargeAudio: {fileID: 0}
+  HitMask:
+    serializedVersion: 2
+    m_Bits: 512
+  ShakeProfile: 0
+  Damage: 10
+  TicRate: 0
+  TicDamage: 0
+  ChargeTime: 0
+  FadeOutTime: 0
+  RayThickness: 0
+  MaxLength: 0
+  ReflectCount: 0
+  FireRate: 0.1
+  AmmoClip: 40
+  ReloadTime: 1.5
+  Recoil: {x: 0, y: 1}
+  RecoilResetDuration: 0.1
+  PushBack: 0.5
+  Spread: 10
+  BulletCount: 0
+  Upgrade: {fileID: 0}
