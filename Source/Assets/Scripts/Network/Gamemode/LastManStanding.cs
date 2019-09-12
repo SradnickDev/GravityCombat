@@ -16,11 +16,6 @@ namespace Network.Gamemode
 			base.Start();
 
 			var players = PhotonNetwork.PlayerList;
-
-			foreach (var player in players)
-			{
-				player.SetAlive(true);
-			}
 		}
 
 		protected override void Assign(Player player)

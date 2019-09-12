@@ -11,17 +11,6 @@ namespace Network.Gamemode
 			Stats[0] = "0";
 			Stats[1] = "0";
 		}
-
-		public override void Start()
-		{
-			base.Start();
-
-			foreach (var player in PhotonNetwork.PlayerList)
-			{
-				player.SetAlive(true);
-			}
-		}
-
 		protected override void Assign(Player player)
 		{
 			if (player.GetTeam() == Team.None || player.GetTeam() == Team.Aggressive)

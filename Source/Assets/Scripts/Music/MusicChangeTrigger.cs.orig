@@ -7,5 +7,9 @@ namespace Music
 		[SerializeField] private AudioClip NewClip = null;
 
 		void Start() => FindObjectOfType<BackgroundMusic>().ChangeClip(NewClip);
+<<<<<<< working copy
+=======
+		
+>>>>>>> merge rev
 	}
 }

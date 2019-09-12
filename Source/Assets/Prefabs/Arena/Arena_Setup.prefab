@@ -393,6 +393,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chat_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 41707749811717823, guid: df2cda036b18b5c48b00a006f7d6bfe5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 152424811827295185, guid: df2cda036b18b5c48b00a006f7d6bfe5,
+        type: 3}
+      propertyPath: viewIdField
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 41656861395640113, guid: df2cda036b18b5c48b00a006f7d6bfe5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -496,16 +506,6 @@ PrefabInstance:
     - target: {fileID: 41656861395640113, guid: df2cda036b18b5c48b00a006f7d6bfe5,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 152424811827295185, guid: df2cda036b18b5c48b00a006f7d6bfe5,
-        type: 3}
-      propertyPath: viewIdField
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 41707749811717823, guid: df2cda036b18b5c48b00a006f7d6bfe5,
-        type: 3}
-      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -658,6 +658,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kill_Feed_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2629263143300715759, guid: 945798c0f11f28246b7d1616e7851fb1,
+        type: 3}
+      propertyPath: viewIdField
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629263143300715759, guid: 945798c0f11f28246b7d1616e7851fb1,
+        type: 3}
+      propertyPath: InstantiationId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3559768300301956885, guid: 945798c0f11f28246b7d1616e7851fb1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -768,16 +778,11 @@ PrefabInstance:
       propertyPath: ScriptableTextDisplay
       value: 
       objectReference: {fileID: 9053539295328987307}
-    - target: {fileID: 2629263143300715759, guid: 945798c0f11f28246b7d1616e7851fb1,
+    - target: {fileID: 9130478096321884475, guid: 945798c0f11f28246b7d1616e7851fb1,
         type: 3}
-      propertyPath: viewIdField
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2629263143300715759, guid: 945798c0f11f28246b7d1616e7851fb1,
-        type: 3}
-      propertyPath: InstantiationId
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: ScriptableTextDisplay
+      value: 
+      objectReference: {fileID: 9053539295328987307}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 945798c0f11f28246b7d1616e7851fb1, type: 3}
 --- !u!224 &7724713953490120013 stripped
@@ -878,22 +883,6 @@ PrefabInstance:
       propertyPath: ScriptableTextDisplay
       value: 
       objectReference: {fileID: 9053539295328987307}
-    - target: {fileID: 7943242481639374133, guid: 4bd71a74ed8d0b542acf63c45234bfbc,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 4c7905ff59367924cb766e12bc738ded,
-        type: 3}
-    - target: {fileID: 7943242481639374133, guid: 4bd71a74ed8d0b542acf63c45234bfbc,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.9100466
-      objectReference: {fileID: 0}
-    - target: {fileID: 7943242481639374133, guid: 4bd71a74ed8d0b542acf63c45234bfbc,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bd71a74ed8d0b542acf63c45234bfbc, type: 3}
 --- !u!4 &6466554925579161318 stripped
@@ -925,6 +914,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SCT_Overlay_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 114138594876687994, guid: efe83590ee5f90e4a91daa59094c7eea,
+        type: 3}
+      propertyPath: m_targetCamera
+      value: 
+      objectReference: {fileID: 2471020762816175416}
     - target: {fileID: 224951395653960082, guid: efe83590ee5f90e4a91daa59094c7eea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1030,11 +1024,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114138594876687994, guid: efe83590ee5f90e4a91daa59094c7eea,
-        type: 3}
-      propertyPath: m_targetCamera
-      value: 
-      objectReference: {fileID: 2471020762816175416}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efe83590ee5f90e4a91daa59094c7eea, type: 3}
 --- !u!224 &9164282554419294019 stripped

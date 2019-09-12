@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using System.Linq;
+
 namespace Music
 {
 	[RequireComponent(typeof(AudioSource))]
@@ -23,12 +25,18 @@ namespace Music
 		
 		private void DestroyDuplication()
 		{
+<<<<<<< working copy
 			var backgroundMusic = FindObjectsOfType<BackgroundMusic>();
 
 			foreach (var music in backgroundMusic)
 			{
 				if (music != this) Destroy(music.gameObject);
 			}
+=======
+			FindObjectsOfType<BackgroundMusic>()
+				.OrderBy(m => m.Priority)
+				.FirstOrDefault();
+>>>>>>> merge rev
 		}
 
 		/// <summary>

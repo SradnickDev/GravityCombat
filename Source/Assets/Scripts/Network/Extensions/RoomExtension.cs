@@ -179,16 +179,6 @@ namespace Network.Extensions
 			return health;
 		}
 
-		public static bool KingAlive(this Room player)
-		{
-			return (bool) player.GetPropertyValue(RoomProperties.KingAlive, false);
-		}
-
-		public static void KingAlive(this Room player, bool isKing)
-		{
-			player.SetPropertyValue(RoomProperties.KingAlive, isKing);
-		}
-
 		#endregion
 	}
 }

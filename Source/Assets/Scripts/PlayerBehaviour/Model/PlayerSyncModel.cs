@@ -1,4 +1,5 @@
-﻿using Photon.Pun;
+﻿using Network;
+using Photon.Pun;
 using UnityEngine;
 
 namespace PlayerBehaviour.Model
@@ -12,14 +13,12 @@ namespace PlayerBehaviour.Model
 		{
 			public double Timestamp;
 			public Vector3 Position;
-			public Vector3 Velocity;
 			public Quaternion Rotation;
 
-			public State(double timestamp, Vector3 position, Vector3 velocity, Quaternion rotation)
+			public State(double timestamp, Vector3 position, Quaternion rotation)
 			{
 				Timestamp = timestamp;
 				Position = position;
-				Velocity = velocity;
 				Rotation = rotation;
 			}
 		}
@@ -87,17 +86,15 @@ namespace PlayerBehaviour.Model
 		{
 			if (stream.IsWriting)
 			{
-				stream.SendNext(Rigidbody.position);
-				stream.SendNext(Rigidbody.velocity);
-				stream.SendNext(Rigidbody.rotation);
+				stream.SendNext(Compression.PackVector(Rigidbody.position));
+				stream.SendNext(Compression.Quaternion(Rigidbody.rotation));
 			}
 			else
 			{
-				var pos = (Vector3) stream.ReceiveNext();
-				var velo = (Vector3) stream.ReceiveNext();
-				var rot = (Quaternion) stream.ReceiveNext();
+				var pos = Compression.UnpackVector((int) stream.ReceiveNext());
+				var rot = Compression.DecompressQuaternion((float) stream.ReceiveNext());
 
-				var newState = new State(info.SentServerTime, pos, velo, rot);
+				var newState = new State(info.SentServerTime, pos, rot);
 
 				AddState(newState);
 
@@ -105,7 +102,7 @@ namespace PlayerBehaviour.Model
 				{
 					if (m_stateBuffer[i].Timestamp < m_stateBuffer[i + 1].Timestamp)
 					{
-						//Debug.Log("State inconsistent");
+						Debug.Log("State inconsistent");
 					}
 				}
 			}

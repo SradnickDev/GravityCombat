@@ -22,10 +22,6 @@ namespace Network.Gamemode
 		public KillTheKing()
 		{
 			Stats[3] = "0";
-		}
-
-		public void SetHealth()
-		{
 			PhotonNetwork.CurrentRoom.SetKingHealth(KingMaxHealth);
 		}
 
@@ -49,7 +45,6 @@ namespace Network.Gamemode
 			m_king = playerInRoom[Random.Range(0, playerInRoom.Length)];
 
 			m_king.SetKing(true);
-			PhotonNetwork.CurrentRoom.KingAlive(true);
 			PhotonNetwork.CurrentRoom.SetKingHealth(KingMaxHealth);
 			Teams.AssignTo(m_king, Team.Aggressive);
 		}
@@ -100,7 +95,7 @@ namespace Network.Gamemode
 		/// </summary>
 		protected override bool WinCondition()
 		{
-			if (PhotonNetwork.CurrentRoom.KingAlive() == false)
+			if (m_king != null && !m_king.IsAlive())
 			{
 				PhotonNetwork.CurrentRoom.SetKingHealth(0);
 				return true;

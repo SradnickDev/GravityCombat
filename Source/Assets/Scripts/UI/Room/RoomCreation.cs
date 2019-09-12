@@ -22,9 +22,9 @@ namespace UI.Room
 		[SerializeField] private Button CreateButton = null;
 
 		[Header("Map Preview References")] [SerializeField]
-		private SceneContainer.SceneContainer WaitingRoom = null;
+		private SceneHandling.SceneContainer WaitingRoom = null;
 
-		private SceneContainer.SceneContainer m_pickedSceneContainer = null;
+		private SceneHandling.SceneContainer m_pickedSceneContainer = null;
 		private string m_pickedGameMode = "";
 		private MapSelection m_mapSelection = null;
 		private GameModeSelection m_gameModeSelection = null;
@@ -63,7 +63,7 @@ namespace UI.Room
 		/// Called from Event when a Map is selected.
 		/// </summary>
 		/// <param name="sceneContainer"></param>
-		private void SetMap(SceneContainer.SceneContainer sceneContainer)
+		private void SetMap(SceneHandling.SceneContainer sceneContainer)
 		{
 			m_pickedSceneContainer = sceneContainer;
 		}
@@ -157,7 +157,6 @@ namespace UI.Room
 		/// <summary>Photon API callback</summary>
 		public override void OnJoinedRoom()
 		{
-			PhotonNetwork.LocalPlayer.SetReady(false);
 			LoadingScreen.LoadScene(WaitingRoom.SceneIndex);
 		}
 

@@ -16,7 +16,7 @@ namespace UI.Options
 		[SerializeField] private Toggle ChatToggle = null;
 		[SerializeField] private Toggle DisplayPingToggle = null;
 		[SerializeField] private Toggle MovementToggle = null;
-		[SerializeField] private SceneContainer.SceneContainer MenuContainer = null;
+		[SerializeField] private SceneHandling.SceneContainer MenuContainer = null;
 
 		private void Start()
 		{
@@ -30,7 +30,7 @@ namespace UI.Options
 
 		#region GameSettings
 
-		private void InitGameSettings()
+		public void InitGameSettings()
 		{
 			ScreenShakeToggle.isOn = Options.GetBool(ScreenShakePref, true);
 			ChatToggle.isOn = Options.GetBool(ChatPref, true);

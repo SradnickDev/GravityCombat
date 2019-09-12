@@ -15,7 +15,7 @@ namespace Network
 	{
 		[SerializeField] private GameObject PlayerPrefab = null;
 		[SerializeField] private Camera Camera = null;
-		[SerializeField] private CameraMovement CameraMovement = null;
+		[SerializeField] private InterpolatedCamera InterpolatedCamera = null;
 		[SerializeField] private MatchRespawn MatchRespawn = null;
 
 		public void OnEvent(EventData photonEvent)
@@ -53,7 +53,7 @@ namespace Network
 			MatchRespawn.Init(healthModel);
 
 			playerMovement.Camera = Camera;
-			CameraMovement.Target = player.transform;
+			InterpolatedCamera.Target = player.transform;
 		}
 
 		#endregion CreatePlayer

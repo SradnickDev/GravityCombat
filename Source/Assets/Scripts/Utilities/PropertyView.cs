@@ -20,7 +20,7 @@ namespace Utilities
 
 		private void Update()
 		{
-			if (Input.GetKeyDown(KeyCode.KeypadMinus))
+			if (Input.GetKeyDown(KeyCode.KeypadMinus) || Input.GetKeyDown(KeyCode.Minus))
 			{
 				m_enabled = !m_enabled;
 			}
@@ -40,14 +40,21 @@ namespace Utilities
 			GUI.Label(new Rect(10, lineHeight * idx, 100, 20), $" In Lobby :{PhotonNetwork.InLobby}", m_style);
 			idx++;
 			GUI.Label(new Rect(10, lineHeight * idx, 100, 20),
-					$"Lobby Infos: {PhotonNetwork.CurrentLobby.Name} , {PhotonNetwork.CurrentLobby.Type}", m_style);
+				$"Lobby Infos: {PhotonNetwork.CurrentLobby.Name} , {PhotonNetwork.CurrentLobby.Type}", m_style);
 			idx++;
 			GUI.Label(new Rect(10, lineHeight * idx, 100, 20),
-					$"Connected and Ready : {PhotonNetwork.IsConnectedAndReady}",
-					m_style);
+				$"Connected and Ready : {PhotonNetwork.IsConnectedAndReady}",
+				m_style);
+			idx++;
+			GUI.Label(new Rect(10, lineHeight * idx, 100, 20), $"Game Version: {PhotonNetwork.GameVersion}",
+				m_style);
+			idx++;
+			GUI.Label(new Rect(10, lineHeight * idx, 100, 20),
+				$"App Version: {PhotonNetwork.PhotonServerSettings.AppSettings.AppVersion}",
+				m_style);
 			idx++;
 			GUI.Label(new Rect(10, lineHeight * idx, 100, 20), $"Count of Players: {PhotonNetwork.CountOfPlayers}",
-					m_style);
+				m_style);
 			idx++;
 
 			if (PhotonNetwork.LocalPlayer != null && PhotonNetwork.InRoom)

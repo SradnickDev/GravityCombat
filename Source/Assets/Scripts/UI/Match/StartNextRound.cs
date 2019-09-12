@@ -3,7 +3,7 @@ using ExitGames.Client.Photon;
 using Network.Extensions;
 using Network.Match;
 using Photon.Pun;
-using SceneContainer;
+using SceneHandling;
 using SCT;
 using UnityEngine;
 
@@ -18,7 +18,7 @@ namespace UI.Match
 		#endregion
 
 		[SerializeField] private SceneContainerDatabase SceneContainerDatabase = null;
-		[SerializeField] private SceneContainer.SceneContainer LobbyContainer = null;
+		[SerializeField] private SceneHandling.SceneContainer LobbyContainer = null;
 		[SerializeField] private int NextRoundTime = 10;
 		[SerializeField] private int TimerAfterLastRound = 25;
 		[SerializeField] private ScriptableTextDisplay ScriptableTextDisplay = null;

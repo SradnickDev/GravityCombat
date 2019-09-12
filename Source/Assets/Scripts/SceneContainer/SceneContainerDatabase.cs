@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 
 
-namespace SceneContainer
+namespace SceneHandling
 {
 	[CreateAssetMenu(menuName = ("MapDatabase"), fileName = ("MapDatabase"))]
 	public class SceneContainerDatabase : ScriptableObject

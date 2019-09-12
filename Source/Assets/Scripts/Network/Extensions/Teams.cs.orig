@@ -59,7 +59,11 @@ namespace Network.Extensions
 		/// </summary>
 		/// <param name="team">From which Team</param>
 		/// <returns>Player List</returns>
+<<<<<<< working copy
 		public IEnumerable<Player> Players(Team team)
+=======
+		public IList<Player> GetPlayers(Team team)
+>>>>>>> merge rev
 		{
 			return PhotonNetwork.PlayerList.Where(player => player.GetTeam() == team);
 		}

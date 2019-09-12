@@ -16,14 +16,14 @@ MonoBehaviour:
     AppIdRealtime: 6cc3d920-e939-4b2c-9d6d-19b6dbbfb911
     AppIdChat: 
     AppIdVoice: 
-    AppVersion: 
+    AppVersion: 0.20
     UseNameServer: 1
     FixedRegion: eu
     Server: 
     Port: 0
     Protocol: 0
     EnableLobbyStatistics: 0
-    NetworkLogging: 2
+    NetworkLogging: 1
   StartInOfflineMode: 0
   PunLogging: 0
   EnableSupportLogger: 0

@@ -58,7 +58,6 @@ namespace PlayerBehaviour.General
 
 			if (m_photonView.Owner.IsKing())
 			{
-				PhotonNetwork.CurrentRoom.KingAlive(false);
 				PhotonNetwork.CurrentRoom.SetKingHealth(0);
 				m_photonView.Owner.SetKing(false);
 			}

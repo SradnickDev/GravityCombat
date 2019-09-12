@@ -32,7 +32,7 @@ namespace Network.Match
 		#endregion
 
 		[SerializeField] private int PreloadTime = 5;
-		[SerializeField] private SceneContainer.SceneContainer LobbyContainer = null;
+		[SerializeField] private SceneHandling.SceneContainer LobbyContainer = null;
 		[SerializeField] private ScriptableTextDisplay ScriptableTextDisplay = null;
 
 		private MatchSpawn m_matchSpawn = null;
@@ -54,7 +54,10 @@ namespace Network.Match
 			m_matchRespawn = GetComponent<MatchRespawn>();
 			m_nextRound = GetComponent<StartNextRound>();
 
-			ResetPlayerProperties();
+			if (PhotonNetwork.IsMasterClient)
+			{
+				ResetPlayerProperties();
+			}
 		}
 
 		private void Start()
@@ -81,17 +84,9 @@ namespace Network.Match
 			m_currentModeBase = PhotonNetwork.CurrentRoom.GetGameMode();
 			m_currentModeBase.HandlePlayer();
 
-			if (m_currentModeBase is KillTheKing)
-			{
-				(m_currentModeBase as KillTheKing).SetHealth();
-			}
-
 			OnReceivedGameMode?.Invoke(m_currentModeBase);
 
 			m_currentModeBase.OnConditionReached += OnMatchEnd;
-
-			m_matchSpawn.SetGameMode(m_currentModeBase);
-			m_matchRespawn.SetGameMode(m_currentModeBase);
 		}
 
 		/// <summary>

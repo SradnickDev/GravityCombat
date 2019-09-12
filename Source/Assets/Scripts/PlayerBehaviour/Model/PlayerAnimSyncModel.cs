@@ -1,4 +1,5 @@
-﻿using Photon.Pun;
+﻿using Network;
+using Photon.Pun;
 using UnityEngine;
 
 namespace PlayerBehaviour.Model
@@ -48,10 +49,17 @@ namespace PlayerBehaviour.Model
 
 		private void Update()
 		{
+			
+			Debug.Log("local rot "+transform.localRotation);
+			Debug.Log("aim point "+PlayerMovementModel.AimPoint);
+			Debug.Log("RightShoulderIK pos " + RightShoulderIK.localPosition);
+			Debug.Log("RightShoulderIK rot " + RightShoulderIK.localRotation);
+			
 			if (m_photonView.IsMine) return;
 
 			UpdateLocalRotation();
 			UpdateShoulder();
+			
 		}
 
 		/// <summary>
@@ -77,16 +85,15 @@ namespace PlayerBehaviour.Model
 			if (stream.IsWriting)
 			{
 				stream.SendNext(transform.localRotation);
-				stream.SendNext(PlayerMovementModel.AimPoint);
+				stream.SendNext(Compression.PackVector(PlayerMovementModel.AimPoint));
 				stream.SendNext(Animator.GetFloat(SpeedHash));
-
 				stream.SendNext(RightShoulderIK.localPosition);
 				stream.SendNext(RightShoulderIK.localRotation);
 			}
 			else
 			{
 				ReceiveLocalRotation(stream);
-				NetworkAimPos = (Vector3) stream.ReceiveNext();
+				NetworkAimPos = Compression.UnpackVector((int) stream.ReceiveNext());
 				ReceiveAnimationStates(stream);
 				ReceiveShouldState(stream);
 			}
@@ -99,7 +106,6 @@ namespace PlayerBehaviour.Model
 		private void ReceiveAnimationStates(PhotonStream stream)
 		{
 			Animator.SetFloat(SpeedHash, (float) stream.ReceiveNext());
-			//other anim
 		}
 
 		/// <summary>

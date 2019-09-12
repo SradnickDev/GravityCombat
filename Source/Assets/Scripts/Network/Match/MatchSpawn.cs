@@ -1,4 +1,5 @@
-﻿using Network.Extensions;
+﻿using System;
+using Network.Extensions;
 using Network.Gamemode;
 using Photon.Pun;
 using Photon.Realtime;
@@ -13,9 +14,9 @@ namespace Network.Match
 	{
 		private GameModeBase m_currentModeBase = null;
 
-		public void SetGameMode(GameModeBase modeBase)
+		private void Awake()
 		{
-			m_currentModeBase = modeBase;
+			m_currentModeBase = PhotonNetwork.CurrentRoom.GetGameMode();
 		}
 
 		/// <summary>
@@ -42,7 +43,6 @@ namespace Network.Match
 			if (m_currentModeBase != null)
 			{
 				m_currentModeBase.SpawnPlayer(player);
-				player.SetReady(false);
 			}
 		}
 	}

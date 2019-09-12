@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,7 +27,7 @@ namespace UI.Options
 
 		#region GraphicSettings
 
-		private void InitGraphicSettings()
+		public void InitGraphicSettings()
 		{
 			FullscreenToggle.isOn = Screen.fullScreen;
 
@@ -73,7 +72,6 @@ namespace UI.Options
 
 		private void OnResolutionDropDownChanged(int index)
 		{
-			Debug.Log("asd");
 			var resolution = Screen.resolutions;
 			var targetResolution = resolution[index];
 

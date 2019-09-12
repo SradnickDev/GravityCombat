@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 namespace Network.Match
 {
 	/// <summary>
-	/// Should be placed on the Player GameObject that will be instantiated if player joined a room.
+	/// Should be placed on the Player GameObject that will be instantiated if client joined a room.
 	/// </summary>
 	public class ReadyOnSceneLoaded : MonoBehaviour
 	{
@@ -15,14 +15,23 @@ namespace Network.Match
 			//Register OnSceneLoaded to an Unity SceneManger Event
 			//is called when the Scene is loaded
 			SceneManager.sceneLoaded += OnSceneLoaded;
+			SceneManager.activeSceneChanged += OnActiveSceneChanged;
 		}
+		
 
 		public void OnDisable()
 		{
 			//unregister when Disabled or Destroyed or scene changed
+			SceneManager.activeSceneChanged -= OnActiveSceneChanged;
 			SceneManager.sceneLoaded -= OnSceneLoaded;
 		}
 
+		private void OnActiveSceneChanged(Scene arg0, Scene arg1)
+		{
+			//this client is not ready till the new scene is loaded
+			PhotonNetwork.LocalPlayer.SetReady(false);
+		}
+		
 		private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 		{
 			//Unity Callback

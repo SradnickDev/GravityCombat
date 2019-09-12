@@ -27,11 +27,15 @@ namespace UI.Options
 
 		#region AudioSettings
 
-		private void InitSoundSettings()
+		public void InitSoundSettings()
 		{
 			MasterSlider.value = PlayerPrefs.GetFloat(MasterPref, 0.75f);
 			VfxSlider.value = PlayerPrefs.GetFloat(VfxPref, 0.75f);
 			MusicSlider.value = PlayerPrefs.GetFloat(MusicPref, 0.75f);
+
+			OnMasterSliderChanged(MasterSlider.value);
+			OnMusicSliderChanged(VfxSlider.value);
+			OnVfxSliderChanged(MusicSlider.value);
 
 			MasterSlider.onValueChanged.AddListener(OnMasterSliderChanged);
 			MusicSlider.onValueChanged.AddListener(OnMusicSliderChanged);

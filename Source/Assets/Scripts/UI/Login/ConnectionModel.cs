@@ -9,7 +9,7 @@ namespace UI.Login
 	{
 		public UnityEvent OnSuccessfulConnect;
 
-		private void Start()
+		public void Setup()
 		{
 			SetSendRate();
 			SetDefaultSettings();
@@ -25,26 +25,14 @@ namespace UI.Login
 		}
 
 		/// <summary>
-		/// Fixed Region, Scene Sync and App Version Settings
+		/// Fixed Region, Scene Sync and App Version Settings.
+		/// AppVersion should set before connecting.
 		/// </summary>
 		private void SetDefaultSettings()
 		{
 			PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = "eu";
 			PhotonNetwork.AutomaticallySyncScene = false;
-			PhotonNetwork.GameVersion = Application.version;
-		}
-
-		public void Authentication(string username, string password)
-		{
-			PhotonNetwork.AuthValues = new AuthenticationValues
-			{
-				AuthType = CustomAuthenticationType.Custom
-			};
-
-			PhotonNetwork.AuthValues.AddAuthParameter("usernamePost", username);
-			PhotonNetwork.AuthValues.AddAuthParameter("passwordPost", password);
-
-			//Connect(username);
+			PhotonNetwork.PhotonServerSettings.AppSettings.AppVersion = Application.version;
 		}
 
 		/// <summary>

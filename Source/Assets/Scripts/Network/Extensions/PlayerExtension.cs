@@ -140,18 +140,9 @@ namespace Network.Extensions
 		/// <returns></returns>
 		public static bool IsFriendly(this Player targetPlayer)
 		{
-			var localTeam = PhotonNetwork.LocalPlayer.GetTeam();
 			var targetTeam = targetPlayer.GetTeam();
-
-			if (localTeam == Team.None)
-			{
-				return false;
-			}
-
-			var sameTeam = localTeam == targetTeam;
-			var deathMatch = localTeam == Team.Aggressive;
-
-			return sameTeam && !deathMatch;
+			if (targetTeam == Team.Aggressive) return false;
+			return PhotonNetwork.LocalPlayer.GetTeam() == targetTeam;
 		}
 
 		#endregion

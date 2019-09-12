@@ -3,7 +3,7 @@
 using UnityEditor;
 using UnityEditor.SceneManagement;
 
-namespace SceneContainer
+namespace SceneHandling
 {
 	[CustomEditor(typeof(SceneContainer))]
 	public class SceneContainerInspector : Editor

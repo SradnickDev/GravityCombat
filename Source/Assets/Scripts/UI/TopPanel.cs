@@ -9,7 +9,7 @@ namespace UI
 		public UnityEvent OnOpen;
 		public UnityEvent OnClose;
 
-		[SerializeField] SceneContainer.SceneContainer LobbySceneContainer = null;
+		[SerializeField] SceneHandling.SceneContainer LobbySceneContainer = null;
 		private bool m_isActive = false;
 
 		void Start()

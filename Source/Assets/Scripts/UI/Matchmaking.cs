@@ -12,7 +12,7 @@ namespace UI
 		[Header("Matchmaking")] [SerializeField]
 		private LogInfo LogInfo = null;
 
-		[SerializeField] private SceneContainer.SceneContainer WaitingRoom = null;
+		[SerializeField] private SceneHandling.SceneContainer WaitingRoom = null;
 		[SerializeField] private Text Timer = null;
 
 		private Hashtable m_expectedProperties = new Hashtable();

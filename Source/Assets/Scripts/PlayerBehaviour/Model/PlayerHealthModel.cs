@@ -69,7 +69,6 @@ namespace PlayerBehaviour.Model
 
 			OnChangeHealthEvent?.Invoke(m_currentHealth, MaxHealth);
 
-			//non owner also needs a ref to the camera, owner gets one through playersetup.cs
 			Camera = Camera.main;
 		}
 

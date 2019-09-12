@@ -5,7 +5,7 @@ using UnityEngine.UI;
 namespace UI.WaitingRoom
 {
 	[RequireComponent(typeof(WaitingRoom))]
-	public class WaitingRoomStats : MonoBehaviour
+	public class WaitingRoomStatsView : MonoBehaviour
 	{
 		[SerializeField] private Text TimerDisplay = null;
 		[SerializeField] private Text PlayerCountDisplay = null;
@@ -24,12 +24,12 @@ namespace UI.WaitingRoom
 
 		private void UpdateStats()
 		{
-			if (m_waitingRoom == null || m_waitingRoom.RoomStats == null) return;
+			if (m_waitingRoom == null) return;
 
-			var stats = m_waitingRoom.RoomStats;
-			SetPlayerCount(stats.CurrentPlayerCount, stats.MaxPlayerCount);
-			var time = m_waitingRoom.GetTime();
-			SetTime(m_waitingRoom.GetTime());
+			SetPlayerCount(m_waitingRoom.CurrentPlayerCount, m_waitingRoom.MaxPlayerCount);
+
+			var time = m_waitingRoom.TimeLeft;
+			SetTime(time);
 		}
 
 		private void SetPlayerCount(int current, int max)

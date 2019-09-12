@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Network.Extensions;
 using Network.Gamemode;
 using Photon.Pun;
 using Photon.Realtime;
@@ -8,9 +9,6 @@ using UnityEngine;
 
 namespace Network.Match
 {
-	/// <summary>
-	/// Respawn mechanic + timer
-	/// </summary>
 	[RequireComponent(typeof(MatchSpawn))]
 	public class MatchRespawn : MonoBehaviour
 	{
@@ -25,9 +23,10 @@ namespace Network.Match
 
 		#region Setup
 
-		private void Start()
+		private void Awake()
 		{
 			m_matchSpawn = GetComponent<MatchSpawn>();
+			m_currentModeBase = PhotonNetwork.CurrentRoom.GetGameMode();
 		}
 
 		public void Init(PlayerHealthModel healthModel)
@@ -42,11 +41,6 @@ namespace Network.Match
 			{
 				m_healthHandler.OnPlayerDeath -= StartCountdown;
 			}
-		}
-
-		public void SetGameMode(GameModeBase modeBase)
-		{
-			m_currentModeBase = modeBase;
 		}
 
 		#endregion
@@ -79,7 +73,7 @@ namespace Network.Match
 			while (duration != -1)
 			{
 				ScriptableTextDisplay.InitializeScriptableText(4, Vector3.zero,
-																"Respawn in " + duration.ToString("F0"));
+					"Respawn in " + duration.ToString("F0"));
 				yield return new WaitForSeconds(1);
 				duration--;
 				if (duration == 0)

@@ -44,8 +44,7 @@ namespace Network
 										new object[] {spawnNode.position, spawnNode.rotation},
 										new RaiseEventOptions
 										{
-											TargetActors = new int[] {player.ActorNumber},
-											CachingOption = EventCaching.AddToRoomCache
+											TargetActors = new int[] {player.ActorNumber}
 										}, SendOptions.SendReliable);
 			}
 		}
@@ -67,8 +66,7 @@ namespace Network
 											new object[] {spawnNode.position, spawnNode.rotation},
 											new RaiseEventOptions
 											{
-												TargetActors = new int[] {player.ActorNumber},
-												CachingOption = EventCaching.AddToRoomCache
+												TargetActors = new int[] {player.ActorNumber}
 											}, SendOptions.SendReliable);
 				}
 			}
@@ -100,8 +98,7 @@ namespace Network
 										new object[] {spawnPoint, spawnRotation},
 										new RaiseEventOptions
 										{
-											TargetActors = new int[] {player.ActorNumber},
-											CachingOption = EventCaching.AddToRoomCache
+											TargetActors = new int[] {player.ActorNumber}
 										}, SendOptions.SendReliable);
 			}
 		}

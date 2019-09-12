@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using SceneContainer;
+using SceneHandling;
 using UnityEngine;
 
 namespace UI.Room
@@ -10,13 +10,13 @@ namespace UI.Room
 	/// </summary>
 	public class MapSelection : MonoBehaviour
 	{
-		public Action<SceneContainer.SceneContainer> OnMapSelected;
+		public Action<SceneHandling.SceneContainer> OnMapSelected;
 
 		[SerializeField] private SceneContainerDatabase SceneContainerDatabase = null;
 		[SerializeField] private Transform MapContent = null;
 		[SerializeField] private MapButton MapButton = null;
 
-		private SceneContainer.SceneContainer m_currentSceneContainer = null;
+		private SceneHandling.SceneContainer m_currentSceneContainer = null;
 		private Dictionary<int, MapButton> m_mapButtons = new Dictionary<int, MapButton>();
 		private int m_prevIndex = -1;
 

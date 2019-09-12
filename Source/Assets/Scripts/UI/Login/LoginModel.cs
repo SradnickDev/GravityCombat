@@ -35,6 +35,8 @@ namespace UI.Login
 
 		private void Awake()
 		{
+			ConnectionModel.Setup();
+			
 			if (!m_HasNickname)
 			{
 				NameField.gameObject.SetActive(true);

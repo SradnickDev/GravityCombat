@@ -15,7 +15,7 @@ namespace UI.Room
 
 		[SerializeField] private Transform Content = null;
 
-		[Header("Map")] [SerializeField] SceneContainer.SceneContainer WaitingRoom = null;
+		[Header("Map")] [SerializeField] SceneHandling.SceneContainer WaitingRoom = null;
 
 		private List<RoomInfo> m_cachedRoomList = new List<RoomInfo>();
 		private Dictionary<string, RoomPanel> m_roomPanelList = new Dictionary<string, RoomPanel>();

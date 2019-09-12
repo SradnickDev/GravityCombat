@@ -3,14 +3,14 @@ using UnityEngine;
 
 namespace Cam
 {
-	public class CameraMovement : MonoBehaviour
+	public class InterpolatedCamera : MonoBehaviour
 	{
 		public Transform Target { get; set; }
 
 		[SerializeField] private Vector3 TargetOffset = new Vector3(0, 0, -25);
 		[SerializeField] private float MaxDistanceFromTarget = 10.0f;
 		[SerializeField, Range(0.0f, 1.0f)] private float SmoothTime = 0.5f;
-		[SerializeField] private UnityEngine.Camera Camera = null;
+		[SerializeField] private Camera Camera = null;
 
 		private Vector3 m_startPosition = new Vector3(0, 0, 0);
 		private Vector3 m_targetPosition = new Vector3(0, 0, 0);
@@ -18,7 +18,13 @@ namespace Cam
 
 		private void Start()
 		{
-			Camera = GetComponentInChildren<UnityEngine.Camera>();
+			if (Camera == null)
+			{
+				Debug.LogError($"No Camera found, {this} will disabled !");
+				enabled = false;
+				return;
+				
+			}
 			m_startPosition = transform.position;
 		}
 
@@ -32,7 +38,7 @@ namespace Cam
 		/// </summary>
 		private void FollowTarget()
 		{
-			if (Target == null || Camera == null)
+			if (Target == null)
 			{
 				m_targetPosition = m_startPosition;
 			}
