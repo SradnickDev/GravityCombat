@@ -87,7 +87,7 @@ namespace PlayerBehaviour.Model
 			if (stream.IsWriting)
 			{
 				stream.SendNext(Compression.PackVector(Rigidbody.position));
-				stream.SendNext(Compression.Quaternion(Rigidbody.rotation));
+				//stream.SendNext(Compression.Quaternion(Rigidbody.rotation));
 			}
 			else
 			{
@@ -126,3 +126,24 @@ namespace PlayerBehaviour.Model
 		}
 	}
 }
+
+public static class StreamExtension
+{
+	public static void SerializeVector(this PhotonStream stream, ref Vector3 vector)
+	{
+		if (stream.IsReading)
+		{
+			stream.SendNext(Compression.PackVector(vector));
+		}
+		else
+		{
+			vector = Compression.UnpackVector((int)stream.ReceiveNext());
+		}
+	}
+
+}
+public  interface IStreamExtension : IPunObservable
+{
+		
+}
+
