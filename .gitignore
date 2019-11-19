@@ -4,12 +4,6 @@
 
 Source/Assets/Plugins/Editor/JetBrains
 Source/Assets/Plugins/Editor/JetBrains.meta
-Source/Assets/Scripts/AutoBuildPipeline.meta
-Source/Assets/Scripts/AutoBuildPipeline
-Source/Assets/Scripts/AutoBuildPipeline/PostBuildPipeline.cs
-Source/Assets/Scripts/AutoBuildPipeline/PostBuildPipeline.meta
-Source/Assets/Scripts/AutoBuildPipeline/AutoVersion.cs
-Source/Assets/Scripts/AutoBuildPipeline/AutoVersion.meta
 Source/Assets/AssetStoreTools*
 Source/Assets/Import/Photon
 
