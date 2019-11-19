@@ -16,18 +16,17 @@ Homepage: https://s4g.itch.io/gravity-combat
 - 5 Gamemodes
 
 [![Gameplay Screenshots / Video](img/screenshot.png)](https://streamable.com/0ja8c)
-https://streamable.com/0ja8c
 
 
-[Build Download]()
+[Build Download](https://github.com/SradnickDev/GravityCombat/blob/master/Build/GravityCombatv0.20.zip)
 
 ### Documentation
 
-  - [Technical Design Document]()
+  - [Technical Design Document](https://github.com/SradnickDev/GravityCombat/blob/master/Documents/Technical%20Design%20Document.pdf)
 
 ### Tools
 
-  - [BuildPipeline]()
+  - [BuildPipeline](https://github.com/SradnickDev/GravityCombat/tree/master/Tools/BuildPipeline)
 	- Helper to automate build process in Unity(auto version,changelog),packing,uploading to itch and Google drive
-  - [TortoiseSlackSlave]()
+  - [TortoiseSlackSlave](https://github.com/SradnickDev/GravityCombat/tree/master/Tools/TortoiseSlackSlave)
 	- TortoiseHg hook that posts in specific Slack channels about commits
