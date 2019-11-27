@@ -160,6 +160,7 @@ namespace Network.Match
 
 			if (float.TryParse(stats[3], out var value))
 			{
+				Debug.Log(value / KillTheKing.KingMaxHealth);
 				Bar.fillAmount = value / KillTheKing.KingMaxHealth;
 			}
 		}

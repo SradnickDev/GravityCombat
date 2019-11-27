@@ -1,6 +1,7 @@
 ﻿using Network.Extensions;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Network.Gamemode
@@ -19,11 +20,6 @@ namespace Network.Gamemode
 
 		private Player m_king = null;
 
-		public KillTheKing()
-		{
-			Stats[3] = "0";
-			PhotonNetwork.CurrentRoom.SetKingHealth(KingMaxHealth);
-		}
 
 		/// <summary>
 		/// All Player join one Team, King joins a other Team.
@@ -31,6 +27,9 @@ namespace Network.Gamemode
 		/// <param name="player"></param>
 		protected override void Assign(Player player)
 		{
+			Stats[3] = "0";
+			PhotonNetwork.CurrentRoom.SetKingHealth(KingMaxHealth);
+			
 			if (m_king != null && m_king.ActorNumber == player.ActorNumber) return;
 
 			Teams.AssignTo(player, Team.White);

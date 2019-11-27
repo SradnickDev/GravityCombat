@@ -49,12 +49,6 @@ namespace PlayerBehaviour.Model
 
 		private void Update()
 		{
-			
-			Debug.Log("local rot "+transform.localRotation);
-			Debug.Log("aim point "+PlayerMovementModel.AimPoint);
-			Debug.Log("RightShoulderIK pos " + RightShoulderIK.localPosition);
-			Debug.Log("RightShoulderIK rot " + RightShoulderIK.localRotation);
-			
 			if (m_photonView.IsMine) return;
 
 			UpdateLocalRotation();

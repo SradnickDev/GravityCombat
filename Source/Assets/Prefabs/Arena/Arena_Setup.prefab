@@ -268,6 +268,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crosshair
       objectReference: {fileID: 0}
+    - target: {fileID: 286382224924792513, guid: 81980313a447909498d5e88fa12971c6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 286382224924792514, guid: 81980313a447909498d5e88fa12971c6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -393,15 +398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chat_Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 41707749811717823, guid: df2cda036b18b5c48b00a006f7d6bfe5,
+    - target: {fileID: 256254449974897761, guid: df2cda036b18b5c48b00a006f7d6bfe5,
         type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 152424811827295185, guid: df2cda036b18b5c48b00a006f7d6bfe5,
-        type: 3}
-      propertyPath: viewIdField
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 41656861395640113, guid: df2cda036b18b5c48b00a006f7d6bfe5,
         type: 3}
@@ -508,6 +508,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 152424811827295185, guid: df2cda036b18b5c48b00a006f7d6bfe5,
+        type: 3}
+      propertyPath: viewIdField
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 41707749811717823, guid: df2cda036b18b5c48b00a006f7d6bfe5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df2cda036b18b5c48b00a006f7d6bfe5, type: 3}
 --- !u!224 &4459797207223366662 stripped
@@ -527,6 +537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scoreboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554603620600742812, guid: 2ed705e243d0adb42a49e2399aca400b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4830801901450995430, guid: 2ed705e243d0adb42a49e2399aca400b,
         type: 3}
@@ -658,16 +673,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kill_Feed_Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 2629263143300715759, guid: 945798c0f11f28246b7d1616e7851fb1,
-        type: 3}
-      propertyPath: viewIdField
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2629263143300715759, guid: 945798c0f11f28246b7d1616e7851fb1,
-        type: 3}
-      propertyPath: InstantiationId
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3559768300301956885, guid: 945798c0f11f28246b7d1616e7851fb1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -773,16 +778,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7967639152155723228, guid: 945798c0f11f28246b7d1616e7851fb1,
-        type: 3}
-      propertyPath: ScriptableTextDisplay
-      value: 
-      objectReference: {fileID: 9053539295328987307}
     - target: {fileID: 9130478096321884475, guid: 945798c0f11f28246b7d1616e7851fb1,
         type: 3}
       propertyPath: ScriptableTextDisplay
       value: 
       objectReference: {fileID: 9053539295328987307}
+    - target: {fileID: 7967639152155723228, guid: 945798c0f11f28246b7d1616e7851fb1,
+        type: 3}
+      propertyPath: ScriptableTextDisplay
+      value: 
+      objectReference: {fileID: 9053539295328987307}
+    - target: {fileID: 2629263143300715759, guid: 945798c0f11f28246b7d1616e7851fb1,
+        type: 3}
+      propertyPath: viewIdField
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629263143300715759, guid: 945798c0f11f28246b7d1616e7851fb1,
+        type: 3}
+      propertyPath: InstantiationId
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 945798c0f11f28246b7d1616e7851fb1, type: 3}
 --- !u!224 &7724713953490120013 stripped
@@ -873,6 +888,11 @@ PrefabInstance:
       propertyPath: CameraMovement
       value: 
       objectReference: {fileID: 2184796663194541203}
+    - target: {fileID: 2368542243435443799, guid: 4bd71a74ed8d0b542acf63c45234bfbc,
+        type: 3}
+      propertyPath: InterpolatedCamera
+      value: 
+      objectReference: {fileID: 2184796663194541203}
     - target: {fileID: 1366435563608953345, guid: 4bd71a74ed8d0b542acf63c45234bfbc,
         type: 3}
       propertyPath: ScriptableTextDisplay
@@ -883,6 +903,11 @@ PrefabInstance:
       propertyPath: ScriptableTextDisplay
       value: 
       objectReference: {fileID: 9053539295328987307}
+    - target: {fileID: 1835757970952198678, guid: 4bd71a74ed8d0b542acf63c45234bfbc,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bd71a74ed8d0b542acf63c45234bfbc, type: 3}
 --- !u!4 &6466554925579161318 stripped
@@ -914,11 +939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SCT_Overlay_Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 114138594876687994, guid: efe83590ee5f90e4a91daa59094c7eea,
-        type: 3}
-      propertyPath: m_targetCamera
-      value: 
-      objectReference: {fileID: 2471020762816175416}
+    - target: {fileID: 1723274891601650, guid: efe83590ee5f90e4a91daa59094c7eea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224951395653960082, guid: efe83590ee5f90e4a91daa59094c7eea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1024,6 +1048,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114138594876687994, guid: efe83590ee5f90e4a91daa59094c7eea,
+        type: 3}
+      propertyPath: m_targetCamera
+      value: 
+      objectReference: {fileID: 2471020762816175416}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efe83590ee5f90e4a91daa59094c7eea, type: 3}
 --- !u!224 &9164282554419294019 stripped

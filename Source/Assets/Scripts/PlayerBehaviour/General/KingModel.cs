@@ -48,6 +48,7 @@ namespace PlayerBehaviour.General
 				m_isDead = true;
 				current = 0;
 			}
+			Debug.Log(current);
 
 			PhotonNetwork.CurrentRoom.SetKingHealth(current);
 		}

@@ -4752,7 +4752,7 @@ ParticleSystem:
 --- !u!199 &1419876830189031504
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4776,6 +4776,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -9504,7 +9505,7 @@ ParticleSystem:
 --- !u!199 &1419876830187805898
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -9528,6 +9529,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -14431,7 +14433,7 @@ ParticleSystem:
 --- !u!199 &2589045687167497352
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -14455,6 +14457,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19704,7 +19707,7 @@ ParticleSystem:
 --- !u!199 &4263533683066925790
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19728,6 +19731,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19860,6 +19864,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2447599788244088735}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 0b8ad94b0b924794aa0baa28bd383af0,
+        type: 3}
+      propertyPath: m_Name
+      value: Mesh_Character
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0b8ad94b0b924794aa0baa28bd383af0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19914,11 +19923,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 0b8ad94b0b924794aa0baa28bd383af0,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesh_Character
       objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 0b8ad94b0b924794aa0baa28bd383af0,
         type: 3}
@@ -19981,6 +19985,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4437623341997833677}
     m_Modifications:
+    - target: {fileID: 134636, guid: 8f8e1e3e6130fed4191e1d2510814d45, type: 3}
+      propertyPath: m_Name
+      value: VFX_BlueSparkleShield
+      objectReference: {fileID: 0}
+    - target: {fileID: 134636, guid: 8f8e1e3e6130fed4191e1d2510814d45, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 402700, guid: 8f8e1e3e6130fed4191e1d2510814d45, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -20041,14 +20053,6 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 134636, guid: 8f8e1e3e6130fed4191e1d2510814d45, type: 3}
-      propertyPath: m_Name
-      value: VFX_BlueSparkleShield
-      objectReference: {fileID: 0}
-    - target: {fileID: 134636, guid: 8f8e1e3e6130fed4191e1d2510814d45, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 19858704, guid: 8f8e1e3e6130fed4191e1d2510814d45, type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -20082,6 +20086,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4437623341997833677}
     m_Modifications:
+    - target: {fileID: 7521846167915284108, guid: 4f0169a4c63c4e74dac1d706bba1136a,
+        type: 3}
+      propertyPath: m_Name
+      value: HUD
+      objectReference: {fileID: 0}
     - target: {fileID: 63487952906667654, guid: 4f0169a4c63c4e74dac1d706bba1136a,
         type: 3}
       propertyPath: PlayerHealthModel
@@ -20197,11 +20206,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7521846167915284108, guid: 4f0169a4c63c4e74dac1d706bba1136a,
-        type: 3}
-      propertyPath: m_Name
-      value: HUD
-      objectReference: {fileID: 0}
     - target: {fileID: 6619255020789688849, guid: 4f0169a4c63c4e74dac1d706bba1136a,
         type: 3}
       propertyPath: PhotonView
@@ -20259,6 +20263,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4437623341997833677}
     m_Modifications:
+    - target: {fileID: 122474, guid: aa8ccdcac26cfc4448d222db929768ec, type: 3}
+      propertyPath: m_Name
+      value: VFX_BulletImpactBlue
+      objectReference: {fileID: 0}
     - target: {fileID: 461740, guid: aa8ccdcac26cfc4448d222db929768ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -20315,10 +20323,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 122474, guid: aa8ccdcac26cfc4448d222db929768ec, type: 3}
-      propertyPath: m_Name
-      value: VFX_BulletImpactBlue
-      objectReference: {fileID: 0}
     - target: {fileID: 19874822, guid: aa8ccdcac26cfc4448d222db929768ec, type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -20356,6 +20360,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4437623341997833677}
     m_Modifications:
+    - target: {fileID: 108034, guid: eb521072c892cf8498158ddfb2467137, type: 3}
+      propertyPath: m_Name
+      value: VFX_VFX_Regenerategreen
+      objectReference: {fileID: 0}
     - target: {fileID: 409966, guid: eb521072c892cf8498158ddfb2467137, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -20399,10 +20407,6 @@ PrefabInstance:
     - target: {fileID: 409966, guid: eb521072c892cf8498158ddfb2467137, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 108034, guid: eb521072c892cf8498158ddfb2467137, type: 3}
-      propertyPath: m_Name
-      value: VFX_VFX_Regenerategreen
       objectReference: {fileID: 0}
     - target: {fileID: 19819996, guid: eb521072c892cf8498158ddfb2467137, type: 3}
       propertyPath: SubModule.subEmitters.Array.size
@@ -20487,6 +20491,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4437623341997833677}
     m_Modifications:
+    - target: {fileID: 147900, guid: e0e755df337558548b726b6ebf3c9816, type: 3}
+      propertyPath: m_Name
+      value: VFX_GreenSwirlyAura
+      objectReference: {fileID: 0}
     - target: {fileID: 422560, guid: e0e755df337558548b726b6ebf3c9816, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -20530,10 +20538,6 @@ PrefabInstance:
     - target: {fileID: 422560, guid: e0e755df337558548b726b6ebf3c9816, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 147900, guid: e0e755df337558548b726b6ebf3c9816, type: 3}
-      propertyPath: m_Name
-      value: VFX_GreenSwirlyAura
       objectReference: {fileID: 0}
     - target: {fileID: 19840636, guid: e0e755df337558548b726b6ebf3c9816, type: 3}
       propertyPath: lengthInSec
@@ -20600,6 +20604,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4437623341997833677}
     m_Modifications:
+    - target: {fileID: 180558, guid: e11094494ddaa294f96560fc03bc1201, type: 3}
+      propertyPath: m_Name
+      value: VFX_BeamUpCloudBlue
+      objectReference: {fileID: 0}
     - target: {fileID: 427636, guid: e11094494ddaa294f96560fc03bc1201, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -20659,10 +20667,6 @@ PrefabInstance:
     - target: {fileID: 19883234, guid: e11094494ddaa294f96560fc03bc1201, type: 3}
       propertyPath: lengthInSec
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 180558, guid: e11094494ddaa294f96560fc03bc1201, type: 3}
-      propertyPath: m_Name
-      value: VFX_BeamUpCloudBlue
       objectReference: {fileID: 0}
     - target: {fileID: 19876310, guid: e11094494ddaa294f96560fc03bc1201, type: 3}
       propertyPath: playOnAwake

@@ -164,6 +164,7 @@ namespace Network.Extensions
 		/// <param name="value"></param>s
 		public static void SetKingHealth(this Room room, float value)
 		{
+			UnityEngine.Debug.Log(value);
 			room.SetPropertyValue(RoomProperties.KingHealth, value);
 		}
 
