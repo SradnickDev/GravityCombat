@@ -18,7 +18,7 @@ Homepage: https://s4g.itch.io/gravity-combat
 [![Gameplay Screenshots / Video](img/screenshot.png)](https://streamable.com/0ja8c)
 
 
-[Build Download](https://github.com/SradnickDev/GravityCombat/blob/master/Build/GravityCombatv0.20.zip)
+[Build Download](https://github.com/SradnickDev/GravityCombat/blob/master/Build/gravity-combat-windows.rar)
 
 ### Documentation
 
