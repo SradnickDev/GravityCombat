@@ -15,6 +15,19 @@ Homepage: https://s4g.itch.io/gravity-combat
 - Different Weapons
 - 5 Gamemodes
 
+#### Roles
+- Gameplay and Tool Programmer
+
+#### Engine / Languages
+- Unity, C#, Powershell, Go
+
+#### Responsibilities
+- Implemented Photon Pun 2 for Multiplayer
+- Used Inverse Kinematic to create Animations
+- Improved Network traffic with simple compression and sending input
+- Implemented core based on MVC
+- Written a build pipeline to automate packing, uploading, version control
+
 [![Gameplay Screenshots / Video](img/screenshot.png)](https://streamable.com/0ja8c)
 
 
