@@ -1,6 +1,6 @@
 <p align="center">
 	<a href="https://s4g.itch.io/gravity-combat">
-		<img width="460" height="300" src="https://raw.githubusercontent.com/SradnickDev/GravityCombat/master/img/logo.png">
+		<img width="768" height="236" src="https://raw.githubusercontent.com/SradnickDev/GravityCombat/master/img/logo.png">
 	</a>
 	</p>
 
