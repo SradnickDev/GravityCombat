@@ -1,4 +1,8 @@
-[![Gravity Combat Logo](img/logo.png)](https://s4g.itch.io/gravity-combat)
+<p align="center">
+	<a href="https://s4g.itch.io/gravity-combat">
+		<img width="460" height="300" src="https://raw.githubusercontent.com/SradnickDev/GravityCombat/master/img/logo.png">
+	</a>
+	</p>
 
 ### Gravity Combat (Student Project)
 
